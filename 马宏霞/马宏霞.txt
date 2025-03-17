@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>title很重要，不要随意写</title>
+  </head>
+  <body>
+    <h1>一级标题</h1>
+    <div>
+      <p>
+        段落标记，a是行内元素，效果是这样的，<a href="https://yangzh.cn"
+          >这是一个超链接地址。</a
+        >
+      </p >
+      <ol>
+        <li>这是列表</li>
+        <li>这是列表</li>
+        <li>这是列表</li>
+        <li>这是列表</li>
+      </ol>
+      <p>
+        < img src="孙悟空.jpg" alt="图片替代说明文字" width="200" /><img
+          src="https://gd-hbimg.huaban.com/4ed5df7cb3629225e7bb3d0cc33742bd949c53b086287-BiIpXp_fw1200webp"
+          alt="说明文字"
+          width="200"
+        />
+      </p >
+      <table>
+        <tr>
+          <td>单元格1</td>
+          <td>单元格1</td>
+          <td>单元格1</td>
+        </tr>
+        <tr>
+          <td>单元格1</td>
+          <td>单元格1</td>
+          <td>单元格1</td>
+        </tr>
+        <tr>
+          <td>单元格1</td>
+          <td>单元格1</td>
+          <td>单元格1</td>
+        </tr>
+      </table>
+      <form action="https://cn.bing.com/search?q=%E8%8A%B1%E7%93%A3%E7%BD%91&cvid=8e9db55245b2407fbe7f7efc2a25e62f&gs_lcrp=EgRlZGdlKgYIABBFGDkyBggAEEUYOTIGCAEQABhAMgYIAhAAGEAyBggDEAAYQDIGCAQQABhAMgYIBRAAGEAyBggGEAAYQDIGCAcQABhA0gEIMzM2NWowajGoAgCwAgA&FORM=ANSPA1&PC=LCTS">
+        <input type="text" name="search_text" />
+        <input type="submit" />
+      </form>
+    </div>
+  </body>
+</html>
