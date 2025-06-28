@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript 异步编程练习</title>
+</head>
+
+<body>
+    <h1>JavaScript 异步编程练习</h1>
+    <div id="demo">
+
+    </div>
+    <script>
+        async function getSomething() {
+            await setTimeout(function () {
+                console.log('111111')
+            }, 2000)
+        }
+        getSomething()
+            .then(
+                result => console.log('Async function finished successfully with result:', result)
+            )
+        console.log('2222222')
+        // ... existing code ...
+        async function getLastPushedDate(owner, repo) {
+            const url = `https://api.github.com/repos/${owner}/${repo}`;
+            try {
+                const response = await fetch(url);
+                if (!response.ok) {
+                    throw new Error('网络响应失败');
+                }
+                const data = await response.json();
+                // pushed_at 字段即为最后一次推送日期
+                return data.pushed_at;
+            } catch (error) {
+                console.error('获取推送日期失败:', error);
+                return null;
+            }
+        }
+
+        // 示例调用，将下面的 'your-github-username' 和 'your-repo-name' 替换为你的实际信息
+        getLastPushedDate('your-github-username', 'your-repo-name').then(date => {
+            console.log('最后一次推送日期:', date);
+            document.getElementById('demo').innerText = '最后一次推送日期: ' + date;
+        });
+        // ... existing code ...
+
+    </script>
+</body>
+
+</html>
