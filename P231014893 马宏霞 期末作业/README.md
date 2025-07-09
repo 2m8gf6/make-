@@ -89,25 +89,22 @@
 ## 运行截图
 
 *待项目完成后，在此处嵌入截图。*
-[![期末作业屏幕截图](https://imgur.la/images/2025/07/07/4d978ff290ad942013d51ffd5ffa815d.png)](https://imgur.la/image/%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.66U9Ty)
+[![期末作业屏幕截图](https://imgur.la/images/2025/07/07/4d978ff290ad942013d51ffd5ffa815d.png)][![期末作业](https://imgur.la/images/2025/07/10/832acefff8a74cf3c6fd924fc429389e.png)](https://imgur.la/image/%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9A.6SG4cj)
 ### 1. QAnything 运行截图
 *(此处将展示自行开发的 API 调用界面)*
 
-[![QAnything 屏幕截图](https://imgur.la/images/2025/07/07/QAnything-.png)](https://imgur.la/image/QAnything-%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.66UTPw)
+[![QAnything 屏幕截图][![期末作业AI问答](https://imgur.la/images/2025/07/10/AI.png)](https://imgur.la/image/%E6%9C%9F%E6%9C%AB%E4%BD%9C%E4%B8%9AAI%E9%97%AE%E7%AD%94.6SGKdI)
 ### 2. WakaTime API 集成与展示截图
 *(此处将展示页脚显示的总编码时长)*
-[![Wakatime屏幕截图](https://imgur.la/images/2025/07/07/Wakatime.png)](https://imgur.la/image/Wakatime%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.66UVpc)
+[![Wakatime屏幕截图][![03891066ad2c754adac2345d1c76aac](https://imgur.la/images/2025/07/10/03891066ad2c754adac2345d1c76aac.png)](https://imgur.la/image/03891066ad2c754adac2345d1c76aac.6SGPm7)
 ### 3. Next.js 组织课程练习作业的运行截图
 *(此处将展示作品集导航页和某个具体练习的运行界面)*
-
-[![03 css 01屏幕截图](https://imgur.la/images/2025/07/07/03-css-01.png)](https://imgur.la/image/03-css-01%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.66URU5)
-[![03 css 02屏幕截图](https://imgur.la/images/2025/07/07/03-css-02.png)](https://imgur.la/image/03-css-02%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.66UzY0)
-[![04 css 01屏幕截图](https://imgur.la/images/2025/07/07/04-css-01.png)](https://imgur.la/image/04-css-01%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.66U3lq)
-[![04 css 02 relative屏幕截图](https://imgur.la/images/2025/07/07/04-css-02-relative.png)](https://imgur.la/image/04-css-02-relative%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.66U4jj)
-[![04 css 02屏幕截图](https://imgur.la/images/2025/07/07/04-css-02.png)](https://imgur.la/image/04-css-02%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.66UKBI)
-[![05 JS屏幕截图](https://imgur.la/images/2025/07/07/05-JS.png)](https://imgur.la/image/05-JS%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.66UQD7)
-[![第七次作业屏幕截图](https://imgur.la/images/2025/07/07/fb8acd5c2612be81dd7407a3b2f4bfbb.png)](https://imgur.la/image/%E7%AC%AC%E4%B8%83%E6%AC%A1%E4%BD%9C%E4%B8%9A%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.66UtQF)
-[![精美网页屏幕截图](https://imgur.la/images/2025/07/07/9fe96be546a6d6dbf1e96dba1d73139a.png)](https://imgur.la/image/%E7%B2%BE%E7%BE%8E%E7%BD%91%E9%A1%B5%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.66UFsv)
+[![03 css 02屏幕截图]([![03 CSS 02](https://imgur.la/images/2025/07/10/03-CSS-02.png)](https://imgur.la/image/03-CSS-02.6SGC1q)
+[![04 css 01屏幕截图][![04 CSS 01](https://imgur.la/images/2025/07/10/04-CSS-01.png)](https://imgur.la/image/04-CSS-01.6SGtvF)
+[![04 css 02屏幕截图][![04 CSS 02](https://imgur.la/images/2025/07/10/04-CSS-02.png)](https://imgur.la/image/04-CSS-02.6SGFPv)
+[![05 JS屏幕截图][![06 CSS](https://imgur.la/images/2025/07/10/06-CSS.png)](https://imgur.la/image/06-CSS.6SGJky)
+[![第七次作业屏幕截图][![07 Async 02(1)](https://imgur.la/images/2025/07/10/07-Async-021.png)](https://imgur.la/image/07-Async-02%281%29.6SGdOK)
+[![精美网页屏幕截图]<a href="https://imgur.la/image/04-CSS-02.6SGjRV"><img src="https://imgur.la/images/2025/07/10/04-CSS-02b75d39647fc9db7a.png" alt="04 CSS 02" border="0"></a>
 
 ## GitHub 仓库管理
 
