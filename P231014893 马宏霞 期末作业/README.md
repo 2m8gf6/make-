@@ -62,7 +62,7 @@
 
 1.  **克隆仓库**
     ```bash
-    git clone [https://github.com/6kate/name.git]
+    git clone [https://github.com/2m8gf6/make-.git]
     cd final-project
     ```
 
