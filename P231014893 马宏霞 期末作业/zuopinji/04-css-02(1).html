@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS 练习2</title>
+    <style>
+      body {
+        background-color: #f0f0f0;
+      }
+      h1 {
+        background-image: url("./images/780.jpg");
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS基础知识：背景、盒模型、布局、动画</h1>
+    <h2>CSS 背景</h2>
+    <div>
+      “cascading” 的音标是 /kæˈskeɪdɪŋ/。如果你想在 HTML 文件里为 “cascading”
+      添加音标，结合当前编辑的文件情况，假如你是要在某个合适的文本处添加
+    </div>
+    <h2>CSS 盒模型</h2>
+    <div class="box">
+      盒模型是 CSS 布局的基石，它定义了元素在页面上的位置和大小。在 CSS 中，每个
+      元素都被看作是一个矩形的盒子，这个盒子由内容、内边距、边框和外边距组成。
+    </div>
+    <style>
+      .box {
+        width: 200px;
+        height: 200px;
+        border: 2px solid #cc6666;
+        padding: 20px;
+        margin-top: 3em;
+        border-radius: 5px;
+      }
+    </style>
+    <h2>信息流、display以及position</h2>
+    <ul>
+      <li>列表项目</li>
+      <li>列表项目</li>
+      <li>列表项目</li>
+    </ul>
+    <ul>
+      <li style="display: inline">列表项目</li>
+      <li style="display: inline">列表项目</li>
+      <li style="display: inline">列表项目</li>
+      <li style="display: none">列表项目</li>
+    </ul>
+    <h2>flex局部</h2>
+    <div class="flex-container">
+      <p>1的点点滴滴的点点滴滴</p>
+      <p>2的点点滴滴的点点滴滴</p>
+      <p>3的点点滴滴的点点滴滴</p>
+    </div>
+    <style>
+      .flex-container {
+        display: flex;
+        flex-direction: column;
+      }
+      .flex-container p {
+        background-color: #bdaeae;
+        border: 1px solid red;
+        margin-right: 1em;
+        padding: 5px;
+      }
+    </style>
+  </body>
+</html>

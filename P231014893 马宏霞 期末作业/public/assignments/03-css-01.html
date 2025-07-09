@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS练习</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+        body {
+            font-family: 'Microsoft YaHei', sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            font-family: "楷体", serif;
+            color: black;
+            text-align: center;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+        
+        p {
+            text-indent: 2em;
+            line-height: 1.7;
+            margin: 15px 0;
+        }
+        
+        .abstract {
+            font-size: 14px;
+            color: #666;
+        }
+        
+        h2 {
+            color: aqua;
+            margin-top: 30px;
+        }
+        
+        #CSSbase {
+            box-shadow: 2px 2px 5px 1px rgba(0,0,0,0.2);
+            padding: 15px;
+            margin: 20px 0;
+            background: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color:red">CSS练习</h1>
+    
+    <div id="CSSbase">
+        <p class="abstract">
+            行内样式：直接写在标签上<br>
+            内部样式：写在style标签中<br>
+            外部样式：写在外部的css文件中
+        </p>
+        
+        <p>
+            行内样式：直接写在标签上<br>
+            内部样式：写在style标签中<br>
+            外部样式：写在外部的css文件中
+        </p>
+        
+        <h2>选择符</h2>
+        <p>
+            标签选择符：标签名{属性：属性值}<br>
+            类选择符：.类名{属性：属性值}<br>
+            ID选择符：#id名{属性：属性值}
+        </p>
+    </div>
+</body>
+</html>

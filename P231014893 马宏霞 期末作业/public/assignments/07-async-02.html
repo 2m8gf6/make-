@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript异步编程练习</title>
+</head>
+<body>
+    <h1>JavaScript异步编程练习</h1>
+    <div id="demo">
+
+    </div>
+    <script>
+        async function getSomething() {
+            await setTimeout(function () {
+                console.log('111111')
+            }, 1000)
+        }
+        getSomething()
+        .then(result => console.log('Async function finished successfully with result:', result))
+            result => console.log('222222')
+    </script>
+    
+</body>
+</html>
+
+
+<script>
+    async function getRepoFilesPushDates(owner, repo) {
+        try {
+            // 获取仓库内容列表
+            const contentsResponse = await fetch(`https://api.github.com/repos/${owner}/${repo}/contents`);
+            if (!contentsResponse.ok) throw new Error('获取仓库内容失败');
+            
+            const contents = await contentsResponse.json();
+            
+            // 过滤掉目录，只处理文件
+            const files = contents.filter(item => item.type === 'file');
+            
+            // 获取每个文件的提交历史
+            const filesData = await Promise.all(files.map(async file => {
+                try {
+                    const commitsResponse = await fetch(`${file.url}/commits?per_page=1`);
+                    if (!commitsResponse.ok) return {name: file.name, date: '获取失败'};
+                    
+                    const commitsData = await commitsResponse.json();
+                    return {
+                        name: file.name,
+                        date: commitsData.length > 0 ? 
+                            new Date(commitsData[0].commit.committer.date).toLocaleString() : '无提交记录'
+                    };
+                } catch (e) {
+                    return {name: file.name, date: '获取失败'};
+                }
+            }));
+            
+            // 生成表格HTML
+            let tableHTML = `
+                <h3>仓库 ${owner}/${repo} 文件推送日期</h3>
+                <table class="file-table">
+                    <thead>
+                        <tr>
+                            <th>文件名</th>
+                            <th>最后推送日期</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+            `;
+            
+            filesData.forEach(file => {
+                tableHTML += `
+                    <tr>
+                        <td>${file.name}</td>
+                        <td>${file.date}</td>
+                    </tr>
+                `;
+            });
+            
+            tableHTML += `</tbody></table>`;
+            document.getElementById('demo').innerHTML = tableHTML;
+            
+        } catch (error) {
+            document.getElementById('demo').innerHTML = `
+                <div class="error">获取文件信息失败: ${error.message}</div>
+            `;
+            console.error(error);
+        }
+    }
+
+    // 调用示例
+    getRepoFilesPushDates('a2s3d4f5567', 'AN2');
+</script>
+
+<style>
+    .file-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 20px 0;
+    }
+    .file-table th, .file-table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+    }
+    .file-table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+    }
+    .file-table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+    .error {
+        color: red;
+        padding: 10px;
+        border: 1px solid red;
+        background-color: #ffeeee;
+    }
+</style>

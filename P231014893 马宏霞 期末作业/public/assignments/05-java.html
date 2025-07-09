@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a = 10;
+        const title ='不变的值'
+        alert(a,title)
+        let b = '10'
+        console.log(a==b)
+        console.log(a === b)
+        console.log(a + b)
+        console.log(a + Number(b))
+        let age = 18
+        if(age>=14) {
+            console.log('可以承担刑事责任')
+        } else {
+            console.log('不能承担刑事责任')
+        }
+        for(let i = 0; i < 9; i++) {
+            console.log(i)
+
+        }
+        let hug = 70
+        while(hug > 0){
+            console.log('继续吃')
+            hug = hug - 10
+        }
+        function sayhello() {
+            console.log('这是一个打招呼的函数')
+        }
+        sayhello()
+        function sayhello2(message) {
+            console.log(message)
+        }
+        sayhello2('这是带参数的打招呼函数')
+        function sayhello3(message) {
+            console.log(message)
+            return message + '这是返回值'
+        }
+        sayhello3('你好')
+        result = sayhello3('你好')
+        console.log(result)
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
